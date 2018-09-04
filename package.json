@@ -4,7 +4,8 @@
   "description": "SocialCompany's public website",
   "main": "index.js",
   "scripts": {
-    "test": "fullTest"
+    "start": "node test/test.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
