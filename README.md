@@ -1,6 +1,8 @@
 # PublicWeb
 A public-facing marketing site for SocialCompany Inc
 
+![Build Status by TravisCI](https://travis-ci.org/SocialCompanyInc/PublicWeb.svg?branch=master)
+
 ## Frameworks
 I started this using Skeleton CSS framework and nothing else.
 
