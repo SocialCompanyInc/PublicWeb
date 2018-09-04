@@ -1,0 +1,69 @@
+html{
+  height: 100%;
+}
+
+a, a:visited{
+  color: #51E2FF;
+}
+
+a:hover, a:active{
+  color: #51e1fe;
+}
+
+body{
+  font-family: 'Montserrat','HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
+  background: #333 url('../image/slice.svg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  color: #eee;
+  background-color: #333;
+  background-image:
+    linear-gradient(
+      162deg,
+      #333333 0vh,
+      #333333 75vh,
+      #51E2FF 75vh,
+      #51E2FF 240vh)
+}
+
+footer{
+  text-align: center;
+  width: 100vw;
+  color: #333;
+  position: absolute;
+  bottom: 1em;
+}
+
+
+img.sclogo{
+  /* margin-left: -20px; */
+  margin-bottom: 1.5rem;
+}
+
+@media (orientation: landscape) {
+  body{
+    background: #333 url('../image/slice.svg') no-repeat;
+    background-image:
+      linear-gradient(
+        162deg,
+        #333333 0vh,
+        #333333 110vh,
+        #51E2FF 110vh,
+        #51E2FF 240vh);
+    }
+  .row .column{
+    margin-top: 5%;
+  }
+  footer{
+    text-align: right;
+    right: 1em;
+  }
+
+}
+
+@media (orientation: portrait) {
+  .row .column{
+    margin-top: 10%;
+  }
+}

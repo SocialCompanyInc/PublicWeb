@@ -1,0 +1,19 @@
+{
+  "name": "publicweb",
+  "version": "1.0.0",
+  "description": "SocialCompany's public website",
+  "main": "index.js",
+  "scripts": {
+    "test": "fullTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialCompanyInc/PublicWeb.git"
+  },
+  "author": "Jeff Ballweg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SocialCompanyInc/PublicWeb/issues"
+  },
+  "homepage": "https://github.com/SocialCompanyInc/PublicWeb#readme"
+}
