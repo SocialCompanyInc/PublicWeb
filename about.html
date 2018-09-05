@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Where are we?</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style/sc.css" >
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+
+<div class="revert-overlay">
+  <h1>Locations</h1>
+  <ul class="locations">
+    <li>
+      <h2>Dublin</h2>
+      23 Trinity Enterprise & Technology Campus<br>
+      Pearse Street<br>
+      Grand Canal Dock<br>
+      Dublin 2<br>
+      Ireland
+    </li>
+    <li>
+      <h2>Madison</h2>
+      122 W. Washington Ave.<br>
+      Suite 105<br>
+      Madison, Wisconsin 53703<br>
+      USA
+    </li>
+  </ul>
+  </div>
+<overlay>
+</overlay>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamVmZmJhbGx3ZWciLCJhIjoiTGFtS2p1ayJ9.EUucPLiWl4kbqBsfonYQAQ';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/jeffballweg/cjlp1w82p78y62rqrfmbflxrp',
+  center: [-89.3865,43.078],
+  zoom: 14.5
+});
+// madison
+// center: [-89.3865,43.078]
+// dublin
+// center: [-6.241,53.345],
+</script>
+</body>
+</html>

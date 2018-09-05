@@ -10,6 +10,10 @@ a:hover, a:active{
   color: #51e1fe;
 }
 
+html{
+  font-family: 'Montserrat','HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
+}
+
 body{
   font-family: 'Montserrat','HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
   background: #333 url('../image/slice.svg') no-repeat;
@@ -66,4 +70,42 @@ img.sclogo{
   .row .column{
     margin-top: 10%;
   }
+}
+
+overlay{
+  width: 140vw;
+  left: -20vw;
+  height: 40vh;
+  top: -18vh;
+  transform: rotate(-18deg);
+  background: #fff;
+  z-index: 1;
+  position: absolute;
+  min-height: 25em;
+}
+.revert-overlay{
+  z-index: 3;
+  color: #333;
+  position: absolute;
+  top: 0;
+  left: 1em;
+  width: 100vw;
+}
+ul.locations li{
+  max-width: 42%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0em 1em 0em;
+}
+ul.locations{
+  list-style: none;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+}
+ul.locations h2{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
 }
