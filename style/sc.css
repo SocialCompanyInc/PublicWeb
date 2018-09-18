@@ -26,21 +26,15 @@ a:hover, a:active{
 
 body{
   font-family: 'Montserrat','HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
-  /* moving the slice  */
-  /* background: #333 url('../image/slice.svg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
-  color: #eee;
-  background-color: #333;
+  background-color: #fff;
   background-image:
     linear-gradient(
       162deg,
-      #333333 0vh,
-      #333333 75vh,
-      #51E2FF 75vh,
+      #ffffff 0vh,
+      #ffffff 50vh,
+      #51E2FF 50vh,
       #51E2FF 240vh)
- */
+
 }
 
 masthead{
@@ -48,6 +42,7 @@ masthead{
   color: #333;
   display: block;
   height: 20vh;
+  background-color: #fff;
 }
 masthead h2{
   display: inline;
@@ -72,7 +67,13 @@ masthead h2{
   background-color: #333;
   background-image: url('../image/plants.jpg');
   background-size: cover;
-  color: #FFF;
+  color: #fff;
+  transform-origin: bottom left;
+  transform: skew(-8deg) rotate(-8deg) translateY(-4em);
+}
+.hero .content{
+  transform: skew(8deg) rotate(8deg) translateY(4em);
+  padding-right: 2em;
 }
 .hero-cta{
   width: 100%;
