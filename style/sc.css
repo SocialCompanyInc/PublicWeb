@@ -141,19 +141,42 @@ footer .content{
   }
 }
 
+/* big long devices, like Pixel XL and other phablets in portrait */
+@media only screen and (orientation : portrait) and (max-device-width: 825px){
+  .hero-cta{
+    /* color: orange; */
+  }
+  masthead .content{
+    text-align: center;
+  }
+  .hero .content{
+    padding-right: 0;
+  }
+  .hero-cta div{
+    text-align: center;
+    margin-bottom: 14em;
+  }
+  .hero{
+    font-size: 60%;
+  }
+  .hero-cta a{
+    font-size: 2em;
+  }
+}
+
 /* even smaller devices, like phones, requiring a long portrait layout */
 @media only screen and (min-device-width: 320px) and (max-device-height: 815px) and (-webkit-min-device-pixel-ratio: 2){
   .hero{
     font-size: 60%;
   }
   .hero .content{
-    padding-right: 0;
+    /* padding-right: 0; */
   }
   .hero-cta{
     /* color: lime; */
   }
   .hero-cta div{
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 12em;
   }
   .hero-cta a{
@@ -203,7 +226,7 @@ footer .content{
 }
 
 /* iPhoneX gets some extra help to deal with the notch */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait) {
   masthead .content {
     padding-top: 3em;
   }
