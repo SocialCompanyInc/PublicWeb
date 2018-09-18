@@ -49,16 +49,57 @@ masthead{
   display: block;
   height: 20vh;
 }
+masthead h2{
+  display: inline;
+  line-height: 3em;
+  padding-left: 0.5em;
+}
+.sclogo{
+  height: 5em;
+  vertical-align: middle;
+  font-family: "Avenir";
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.sclogo h2 b{
+  font-weight: bold;
+}
 
 .hero{
   width: 100%;
+  height: 65vh;
   display: block;
   background-color: #333;
-  background-image: image('image/plants.jpg');
+  background-image: url('../image/plants.jpg');
+  background-size: cover;
   color: #FFF;
 }
 .hero-cta{
-  height: 65vh;
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.hero-cta span{
+  font-size: 3em;
+}
+
+.hero-cta div{
+  text-align: right;
+  padding-top: 1em;
+}
+.hero-cta a{
+  background-color: #e22d3e;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+
+.hero-cta a:hover,
+.hero-cta a:active{
+  background-color: #b83130;
 }
 
 footer{
@@ -71,10 +112,8 @@ footer{
   height: 15vh;
 }
 
-
-img.sclogo{
-  /* margin-left: -20px; */
-  /* margin-bottom: 1.5rem; */
+footer .content{
+  padding-top: 10vh;
 }
 
 @media (orientation: landscape) {
