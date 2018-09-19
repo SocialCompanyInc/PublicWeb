@@ -2,6 +2,20 @@ html{
   height: 100%;
 }
 
+masthead,
+footer,
+.hero,
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.content{
+  margin: 0 2em;
+  padding: 2em 0;
+}
+
 a, a:visited{
   color: #51E2FF;
 }
@@ -12,58 +26,255 @@ a:hover, a:active{
 
 body{
   font-family: 'Montserrat','HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
-  background: #333 url('../image/slice.svg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
-  color: #eee;
-  background-color: #333;
+  background-color: #fff;
   background-image:
     linear-gradient(
       162deg,
-      #333333 0vh,
-      #333333 75vh,
-      #51E2FF 75vh,
+      #ffffff 0vh,
+      #ffffff 50vh,
+      #51E2FF 50vh,
       #51E2FF 240vh)
+
+}
+
+masthead{
+  width: 100%;
+  color: #333;
+  display: block;
+  height: 20vh;
+  background-color: #fff;
+}
+masthead .content{
+  padding-top: 2em;
+}
+masthead h2{
+  display: inline;
+  line-height: 3em;
+  padding-left: 0.5em;
+}
+.sclogo{
+  height: 5em;
+  vertical-align: middle;
+  font-family: "Avenir";
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.sclogo h2 b{
+  font-weight: bold;
+}
+
+.hero{
+  width: 100%;
+  height: 65vh;
+  display: block;
+  background-color: #333;
+  background-image: url('../image/plants.jpg');
+  background-size: cover;
+  background-position: bottom left;
+  color: #fff;
+  transform-origin: bottom left;
+  transform: skew(-8deg) rotate(-8deg);
+}
+.hero .content{
+  transform: skew(8deg) rotate(8deg);
+  padding-right: 2em;
+}
+.hero-cta{
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.hero-cta span{
+  font-size: 3.5em;
+  letter-spacing: -0.05em;
+  line-height: 1em;
+  font-weight: lighter;
+}
+
+.hero-cta div{
+  text-align: right;
+  padding-top: 1em;
+}
+.hero-cta a{
+  background-color: #e22d3e;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+
+.hero-cta a:hover,
+.hero-cta a:active{
+  background-color: #b83130;
 }
 
 footer{
+  margin-top:0;
+  background-color: #51E2FF;
   text-align: center;
   width: 100vw;
   color: #333;
+  /* position: absolute; */
+  height: 15vh;
+}
+
+footer .content{
+  /* padding-top: 10vh; */
+  width: 100%;
+  text-align: right;
   position: absolute;
-  bottom: 1em;
+  margin: 0;
+  right: 10vw;
+  bottom: 1vh;
+  padding-bottom: 1em;
+}
+
+/* smaller devices, like tablets, requiring a compact layout */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+
+  .hero{
+    margin-top: 6em;
+  }
+
+  .hero-cta{
+    /* color: blue; */
+    margin-top: 10vh;
+  }
+
+  /* footer .content{
+    bottom: 0vh;
+  } */
+}
+
+/* big long devices, like Pixel XL and other phablets in portrait */
+@media only screen and (orientation : portrait) and (max-device-width: 825px){
+  .hero-cta{
+    /* color: orange; */
+  }
+  masthead .content{
+    text-align: center;
+  }
+  .hero .content{
+    padding-right: 0;
+  }
+  .hero-cta div{
+    text-align: center;
+    margin-bottom: 14em;
+  }
+  .hero{
+    font-size: 60%;
+  }
+  .hero-cta a{
+    font-size: 2em;
+  }
 }
 
 
-img.sclogo{
-  /* margin-left: -20px; */
-  margin-bottom: 1.5rem;
+/* even smaller devices, like phones, requiring a long portrait layout */
+@media only screen and (min-device-width: 320px) and (max-device-height: 815px) and (-webkit-min-device-pixel-ratio: 2){
+  .hero{
+    font-size: 60%;
+  }
+  .hero .content{
+    /* padding-right: 0; */
+  }
+  .hero-cta{
+    /* color: lime; */
+  }
+  .hero-cta div{
+    /* text-align: center; */
+    margin-bottom: 12em;
+  }
+  .hero-cta a{
+    font-size: 180%;
+  }
 }
 
-@media (orientation: landscape) {
+/* small screens, like phones in landscape requiring a very wide, short layout */
+@media only screen and (min-device-width: 320px) and (max-device-height: 815px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
   body{
-    background: #333 url('../image/slice.svg') no-repeat;
     background-image:
       linear-gradient(
         162deg,
-        #333333 0vh,
-        #333333 110vh,
-        #51E2FF 110vh,
-        #51E2FF 240vh);
-    }
-  .row .column{
-    margin-top: 5%;
-  }
-  footer{
-    text-align: right;
-    right: 1em;
+        #ffffff 0vh,
+        #ffffff 80vh,
+        #51E2FF 80vh,
+        #51E2FF 110vh);
+    overflow: hidden;
   }
 
+  masthead .content{
+    padding-top: 1.5em;
+  }
+  masthead .sclogo{
+    height: 3em;
+  }
+  masthead h2{
+    line-height: 2em;
+    font-size: 2em;
+  }
+  .hero-cta{
+    /* color: Orange; */
+    margin-top: 0em;
+    font-size: 120%;
+  }
+
+  .hero-cta div{
+    margin-bottom: 2em;
+  }
+
+  .hero{
+    margin-top: 8em;
+  }
+  .hero .content{
+    /* padding-top: 0em; */
+  }
+
+  footer .content{
+    /* bottom: 1em; */
+    bottom: 0vh;
+  }
 }
 
-@media (orientation: portrait) {
-  .row .column{
-    margin-top: 10%;
+/* quite small devices that require even more compact layout, iPhone 4-5 size */
+@media only screen and (min-device-width: 320px) and (max-device-height: 600px){
+  masthead .sclogo{
+    height: 3em;
+  }
+  masthead h2{
+    line-height: 2em;
+    font-size: 1em;
+  }
+  .hero {
+    margin-top: 5em;
+  }
+  .hero-cta{
+    /* color: red; */
+    margin-top: 2em;
+    font-size: 90%;
+  }
+  footer .content{
+    font-size: 70%;
+  }
+}
+
+/* really small devices in landscape */
+@media only screen and (min-device-width: 320px) and (max-device-height: 600px) and (orientation : landscape){
+  footer .content{
+    /* bottom: 4em; */
+    bottom: 0vh;
+  }
+
+  .hero-cta{
+    margin-top: 0;
+  }
+}
+
+/* iPhoneX gets some extra help to deal with the notch */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait) {
+  masthead .content {
+    padding-top: 3em;
   }
 }
