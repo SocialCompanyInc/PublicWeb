@@ -73,10 +73,10 @@ masthead h2{
   background-position: bottom left;
   color: #fff;
   transform-origin: bottom left;
-  transform: skew(-8deg) rotate(-8deg) translateY(-4em);
+  transform: skew(-8deg) rotate(-8deg);
 }
 .hero .content{
-  transform: skew(8deg) rotate(8deg) translateY(4em);
+  transform: skew(8deg) rotate(8deg);
   padding-right: 2em;
 }
 .hero-cta{
@@ -118,7 +118,14 @@ footer{
 }
 
 footer .content{
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  margin: 0;
+  right: 10vw;
+  bottom: 1vh;
+  padding-bottom: 1em;
 }
 
 /* smaller devices, like tablets, requiring a compact layout */
@@ -133,12 +140,9 @@ footer .content{
     margin-top: 10vh;
   }
 
-  footer .content{
-    padding-top: 0;
-    text-align: center;
-    bottom: 0;
-    position: relative;
-  }
+  /* footer .content{
+    bottom: 0vh;
+  } */
 }
 
 /* big long devices, like Pixel XL and other phablets in portrait */
@@ -163,6 +167,7 @@ footer .content{
     font-size: 2em;
   }
 }
+
 
 /* even smaller devices, like phones, requiring a long portrait layout */
 @media only screen and (min-device-width: 320px) and (max-device-height: 815px) and (-webkit-min-device-pixel-ratio: 2){
@@ -221,11 +226,12 @@ footer .content{
     margin-top: 8em;
   }
   .hero .content{
-    padding-top: 0em;
+    /* padding-top: 0em; */
   }
 
   footer .content{
-    bottom: 3em;
+    /* bottom: 1em; */
+    bottom: 0vh;
   }
 }
 
@@ -237,6 +243,9 @@ footer .content{
   masthead h2{
     line-height: 2em;
     font-size: 1em;
+  }
+  .hero {
+    margin-top: 5em;
   }
   .hero-cta{
     /* color: red; */
@@ -251,7 +260,8 @@ footer .content{
 /* really small devices in landscape */
 @media only screen and (min-device-width: 320px) and (max-device-height: 600px) and (orientation : landscape){
   footer .content{
-    bottom: 4em;
+    /* bottom: 4em; */
+    bottom: 0vh;
   }
 
   .hero-cta{
