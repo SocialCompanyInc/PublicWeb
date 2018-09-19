@@ -85,7 +85,10 @@ masthead h2{
 }
 
 .hero-cta span{
-  font-size: 3em;
+  font-size: 3.5em;
+  letter-spacing: -0.05em;
+  line-height: 1em;
+  font-weight: lighter;
 }
 
 .hero-cta div{
