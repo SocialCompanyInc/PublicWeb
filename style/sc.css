@@ -94,7 +94,7 @@ masthead h2{
 }
 .hero-cta a{
   background-color: #e22d3e;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   text-decoration: none;
   color: #fff;
   font-weight: bolder;
@@ -136,7 +136,7 @@ footer .content{
   footer .content{
     padding-top: 0;
     text-align: center;
-    bottom: 1em;
+    bottom: 0;
     position: relative;
   }
 }
@@ -205,11 +205,12 @@ footer .content{
   }
   masthead h2{
     line-height: 2em;
-    font-size: 1em;
+    font-size: 2em;
   }
   .hero-cta{
-    /* color: YellowGreen; */
+    /* color: Orange; */
     margin-top: 0em;
+    font-size: 120%;
   }
 
   .hero-cta div{
@@ -219,9 +220,42 @@ footer .content{
   .hero{
     margin-top: 8em;
   }
+  .hero .content{
+    padding-top: 0em;
+  }
 
   footer .content{
     bottom: 3em;
+  }
+}
+
+/* quite small devices that require even more compact layout, iPhone 4-5 size */
+@media only screen and (min-device-width: 320px) and (max-device-height: 600px){
+  masthead .sclogo{
+    height: 3em;
+  }
+  masthead h2{
+    line-height: 2em;
+    font-size: 1em;
+  }
+  .hero-cta{
+    /* color: red; */
+    margin-top: 2em;
+    font-size: 90%;
+  }
+  footer .content{
+    font-size: 70%;
+  }
+}
+
+/* really small devices in landscape */
+@media only screen and (min-device-width: 320px) and (max-device-height: 600px) and (orientation : landscape){
+  footer .content{
+    bottom: 4em;
+  }
+
+  .hero-cta{
+    margin-top: 0;
   }
 }
 
