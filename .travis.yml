@@ -1,4 +1,7 @@
 language: node_js
+install:
+  npm install -g travis-ci-cloudfront-invalidation
+  npm install
 deploy:
   provider: s3
   access_key_id: AKIAIJE6YA2ITKGM7RDA
